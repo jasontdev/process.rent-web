@@ -1,21 +1,15 @@
-import {useEffect, useState} from "react";
+import { Route, Routes } from "react-router-dom";
+import Login from "./Login";
+import { ProtectedRoute } from "./components/ProtectedRoute";
+import Home from "./routes/Home";
 
 function App() {
-  const [userId, setUserId] = useState<string>("");
-
-  useEffect(() => {
-    (async () => {
-      const response = await fetch('/api/agreement/12345');
-      const payload = await response.text();
-      setUserId(payload);
-    })();
-  }, []);
-
   return (
-    <>
-      {userId}
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} /> 
+      <Route path="/login" element={<Login />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
