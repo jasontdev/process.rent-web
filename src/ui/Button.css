@@ -1,0 +1,16 @@
+.button {
+    color: white;
+    background: linear-gradient(dodgerblue, royalblue);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+    border-radius: 0.3rem;
+}
+
+.button-transparent-background {
+    color: black;
+    background: none;
+}

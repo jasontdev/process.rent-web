@@ -1,0 +1,13 @@
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 16rem;
+    height: calc(100vh - 4.5rem);
+    overflow: hidden;
+}
+
+.sidebar-container-hidden {
+    width: 3rem;
+}

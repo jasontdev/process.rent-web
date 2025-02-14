@@ -1,0 +1,5 @@
+.agreements-container {
+    display: inline-block;
+    min-width: 36rem;
+    max-width: 100%;
+}
